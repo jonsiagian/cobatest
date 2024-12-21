@@ -1,100 +1,14 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>komunikasikaryautama - Penyedia Layanan Internet</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body and Layout */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Header */
-        #header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-        }
-
-        #header .logo h1 {
-            font-size: 2rem;
-        }
-
-        #header nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        #header nav ul li {
-            margin: 0 15px;
-        }
-
-        #header nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        #header nav ul li a:hover {
-            color: #FF6347;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('onopat.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            position: relative;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            animation: fadeIn 2s ease-out;
-        }
-
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-out 0.5s;
-        }
-
-        .cta-button {
-            background-color: red;
-            padding: 10px 20px;
-            margin-top: 20px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            animation: fadeIn 2s ease-out 1s;
-        }
-
-        .cta-button:hover {
-            background-color: #FF4500;
-        }
-
-        /* Service Section */
-        .services {
+  <title>Komunikasikaryautama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    /* Service Section */
+    .services {
             padding: 50px 20px;
             text-align: center;
         }
@@ -193,284 +107,190 @@
                 transform: translateY(0);
             }
         }
-/* Testimoni Section */
-/* Testimoni Section */
-/* Testimoni Section */
-/* Testimonial Section */
-.testimonials {
-    text-align: center;
-    padding: 50px 20px;
-}
+</style>
+</head>
+<body>
 
-.testimonial-slider {
-    position: relative;
-    width: 80%; /* Adjust width to fit your design */
-    margin: 0 auto;
-    overflow: hidden;
-}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded"> 
+          </a>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOme</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">produk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
 
-/* Wrapper untuk testimonial */
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease; /* Smooth transition */
-}
+<div  class="container-fluid">
+<div  id="demo" class="carousel slide" data-bs-ride="carousel">
 
-/* Styling untuk testimonial */
-.testimonial {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
-.testimonial img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-.testimonial p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.testimonial h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #333;
-}
-
-.testimonial p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Styling untuk tombol navigasi */
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-.prev-btn:hover, .next-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
     
-
-    </style>
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <h4 style='font-size:15px;'>Komunikasi Karya Utama</h4>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Layanan</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section  id="home" class="hero">
-        <div class="hero-content">
-            <h1 style="color: blue;width:auto;background-color:white;">Internet Cepat, Jaringan Stabil</h1>
-            <p style="color: blue;">Menawarkan solusi internet terbaik untuk rumah dan bisnis Anda</p>
-            <a href="#services" class="cta-button">Jelajahi Layanan</a>
-        </div>
-    </section>
-
-    <!-- Testimoni Section -->
-    <section id="testimonials" class="testimonials">
-        <h2>Testimoni Pelanggan</h2>
-        <div class="testimonial-slider">
-            <div class="slider-wrapper">
-                <div class="testimonial">
-                    <img src="https://via.placeholder.com/100" alt="Customer 1">
-                    <p>"Layanan internet yang sangat cepat dan stabil. Sangat membantu bisnis kami untuk terus berkembang!"</p>
-                    <h3>Andi Pratama</h3>
-                    <p>CEO, Andi Corp</p>
-                </div>
-                <div class="testimonial">
-                    <img src="https://via.placeholder.com/100" alt="Customer 2">
-                    <p>"FastNet selalu memberikan koneksi yang sangat stabil dan cepat, cocok untuk bekerja dari rumah."</p>
-                    <h3>Sarah Riana</h3>
-                    <p>Freelancer</p>
-                </div>
-                <div class="testimonial">
-                    <img src="https://via.placeholder.com/100" alt="Customer 3">
-                    <p>"Saya merasa sangat puas dengan layanan pelanggan yang responsif dan cepat menyelesaikan masalah saya."</p>
-                    <h3>Tommy Wijaya</h3>
-                    <p>Manager, Retail Shop</p>
-                </div>
-                <div class="testimonial">
-                    <img src="https://via.placeholder.com/100" alt="Customer 4">
-                    <p>"Layanan luar biasa, sangat membantu dalam mempercepat proses kerja kami."</p>
-                    <h3>Lisa Maharani</h3>
-                    <p>Director, Tech Solutions</p>
-                </div>
-                <div class="testimonial">
-                    <img src="https://via.placeholder.com/100" alt="Customer 5">
-                    <p>"Sangat puas dengan koneksi internet yang selalu stabil, cocok untuk pekerjaan jarak jauh."</p>
-                    <h3>Rudi Santoso</h3>
-                    <p>Consultant</p>
-                </div>
-            </div>
-            <!-- Navigation Buttons -->
-            <button class="prev-btn">&#10094;</button>
-            <button class="next-btn">&#10095;</button>
-        </div>
-    </section>
+    <!-- The slideshow/carousel -->
+    <div style="height:350px; margin-top:20px; border: 1px solid #ddd;border-radius: 8px;" class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="height:350px;  width: 100%;" src="onopat.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img style="height:350px;  width: 100%;" src="logo.jpeg" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img style="height:350px; width: 100%;" src="logo1.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
     
-    
-    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-    <!-- Layanan Section -->
-    <section id="services" class="services">
-        <h2>Layanan Kami</h2>
-        <div class="service-cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Internet Cepat">
-                <h3>Internet Cepat</h3>
-                <p>Kecepatan internet yang mendukung aktivitas sehari-hari Anda tanpa gangguan.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Koneksi Stabil">
-                <h3>Koneksi Stabil</h3>
-                <p>Jaringan stabil untuk pekerjaan, belajar, dan hiburan tanpa buffering.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Support 24/7">
-                <h3>Support 24/7</h3>
-                <p>Layanan pelanggan yang siap membantu kapan saja, 24 jam sehari, 7 hari seminggu.</p>
-            </div>
+</div>
+<section id="services" class="services">
+    <h2>Layanan Kami</h2>
+    <div class="service-cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Internet Cepat">
+            <h3>Internet Cepat</h3>
+            <p>Kecepatan internet yang mendukung aktivitas sehari-hari Anda tanpa gangguan.</p>
         </div>
-    </section>
-
-    <!-- Produk Section (Menambahkan Konten Produk) -->
-    <section id="products" class="services">
-        <h2>Produk Kami</h2>
-        <div class="service-cards">
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Produk 1">
-                <h3>Produk 1</h3>
-                <p>Deskripsi produk 1 dengan penjelasan singkat.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Produk 2">
-                <h3>Produk 2</h3>
-                <p>Deskripsi produk 2 dengan penjelasan singkat.</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="Produk 3">
-                <h3>Produk 3</h3>
-                <p>Deskripsi produk 3 dengan penjelasan singkat.</p>
-            </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Koneksi Stabil">
+            <h3>Koneksi Stabil</h3>
+            <p>Jaringan stabil untuk pekerjaan, belajar, dan hiburan tanpa buffering.</p>
         </div>
-    </section>
-
-    <!-- Tentang Kami Section -->
-    <section id="about" class="about">
-        <h2>Tentang FastNet</h2>
-        <p>FastNet adalah penyedia layanan internet terpercaya dengan pengalaman lebih dari 10 tahun dalam menyediakan koneksi internet cepat dan stabil untuk rumah dan bisnis Anda. Kami berkomitmen untuk memberikan layanan terbaik dengan dukungan teknis yang handal dan support pelanggan yang responsif.</p>
-    </section>
-
-    <!-- Kontak Section -->
-    <section id="contact" class="contact">
-        <h2>Kontak Kami</h2>
-        <p>Hubungi kami untuk informasi lebih lanjut atau untuk mendaftar layanan internet kami.</p>
-        <a href="mailto:info@fastnet.com" class="cta-button">Email Kami</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Komunikasi Karya Utama - Penyedia Layanan Internet Terpercaya</p>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Support 24/7">
+            <h3>Support 24/7</h3>
+            <p>Layanan pelanggan yang siap membantu kapan saja, 24 jam sehari, 7 hari seminggu.</p>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-      
-    // Intersection Observer for Scroll Animations
-    const observerOptions = {
-        root: null, // relative to viewport
-        threshold: 0.5 // 50% of the card should be visible
-    };
+<!-- Produk Section (Menambahkan Konten Produk) -->
+<section id="products" class="services">
+    <h2>Produk Kami</h2>
+    <div class="service-cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Produk 1">
+            <h3>Produk 1</h3>
+            <p>Deskripsi produk 1 dengan penjelasan singkat.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Produk 2">
+            <h3>Produk 2</h3>
+            <p>Deskripsi produk 2 dengan penjelasan singkat.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Produk 3">
+            <h3>Produk 3</h3>
+            <p>Deskripsi produk 3 dengan penjelasan singkat.</p>
+        </div>
+    </div>
+</section>
 
-    const cards = document.querySelectorAll('.card');
+<!-- Tentang Kami Section -->
+<section id="about" class="about">
+    <h2>Tentang FastNet</h2>
+    <p>FastNet adalah penyedia layanan internet terpercaya dengan pengalaman lebih dari 10 tahun dalam menyediakan koneksi internet cepat dan stabil untuk rumah dan bisnis Anda. Kami berkomitmen untuk memberikan layanan terbaik dengan dukungan teknis yang handal dan support pelanggan yang responsif.</p>
+</section>
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // When the card is visible, add the "visible" class
-                entry.target.classList.add('visible');
-            } else {
-                // When the card is no longer visible, remove the "visible" class
-                entry.target.classList.remove('visible');
-            }
-        });
-    }, observerOptions);
+<!-- Kontak Section -->
+<section id="contact" class="contact">
+    <h2>Kontak Kami</h2>
+    <p>Hubungi kami untuk informasi lebih lanjut atau untuk mendaftar layanan internet kami.</p>
+    <a href="mailto:info@fastnet.com" class="cta-button">Email Kami</a>
+</section>
 
-    // Observe each card
-    cards.forEach(card => {
-        observer.observe(card);
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Komunikasi Karya Utama - Penyedia Layanan Internet Terpercaya</p>
+    </div>
+</footer>
+
+<script>
+  
+// Intersection Observer for Scroll Animations
+const observerOptions = {
+    root: null, // relative to viewport
+    threshold: 0.5 // 50% of the card should be visible
+};
+
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // When the card is visible, add the "visible" class
+            entry.target.classList.add('visible');
+        } else {
+            // When the card is no longer visible, remove the "visible" class
+            entry.target.classList.remove('visible');
+        }
     });
+}, observerOptions);
+
+// Observe each card
+cards.forEach(card => {
+    observer.observe(card);
+});
 </script>
 
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const sliderWrapper = document.querySelector('.slider-wrapper');
-    const testimonials = document.querySelectorAll('.testimonial');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const testimonials = document.querySelectorAll('.testimonial');
 
-    let currentIndex = 0;
+let currentIndex = 0;
 
-    // Menampilkan testimonial berdasarkan indeks
-    function showTestimonial(index) {
-        const totalTestimonials = testimonials.length;
-        // Pastikan index dalam range yang valid
-        currentIndex = (index + totalTestimonials) % totalTestimonials;
-        sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+// Menampilkan testimonial berdasarkan indeks
+function showTestimonial(index) {
+    const totalTestimonials = testimonials.length;
+    // Pastikan index dalam range yang valid
+    currentIndex = (index + totalTestimonials) % totalTestimonials;
+    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-    // Navigasi ke testimonial berikutnya
-    nextBtn.addEventListener('click', function () {
-        showTestimonial(currentIndex + 1);
-    });
+// Navigasi ke testimonial berikutnya
+nextBtn.addEventListener('click', function () {
+    showTestimonial(currentIndex + 1);
+});
 
-    // Navigasi ke testimonial sebelumnya
-    prevBtn.addEventListener('click', function () {
-        showTestimonial(currentIndex - 1);
-    });
+// Navigasi ke testimonial sebelumnya
+prevBtn.addEventListener('click', function () {
+    showTestimonial(currentIndex - 1);
+});
 
-    // Inisialisasi slider pada testimonial pertama
-    showTestimonial(currentIndex);
+// Inisialisasi slider pada testimonial pertama
+showTestimonial(currentIndex);
 });
 
 
@@ -478,5 +298,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 </body>
-
 </html>
+
+
